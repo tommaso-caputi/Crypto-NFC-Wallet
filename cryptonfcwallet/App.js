@@ -1,15 +1,17 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-import Buttons from './components/Buttons'
-import Balance from './components/Balance'
+import BottomDiv from './components/BottomDiv'
+import TopDiv from './components/TopDiv'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.titleDiv}><Text style={styles.title}>Crypto Keeper</Text></View>
-      <View style={styles.balanceDiv}><Balance /></View>
-      <View style={styles.centerDiv}></View>
-      <View style={styles.buttonsDiv}><Buttons /></View>
+      <View style={styles.topDiv}>
+        <TopDiv></TopDiv>
+      </View>
+      <View style={styles.bottomDiv}>
+        <BottomDiv />
+      </View>
     </View>
   );
 }
@@ -17,33 +19,19 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
-    backgroundColor: '#78b5ee',
+    backgroundColor: '#212025',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  title: {
-    fontSize: 40,
-    color: '#154C79'
-  },
-  titleDiv: {
+  topDiv: {
     width: '100%',
-    height: '15%',
-    paddingTop: 40,
-    alignItems: 'center',
-    justifyContent: 'center'
+    height: '40%',
+    borderWidth: 3
   },
-  balanceDiv: {
+  bottomDiv: {
     width: '100%',
-    height: '10%',
-    backgroundColor: '#013ca4'
-  },
-  centerDiv: {
-    width: '100%',
-    height: '60%'
-  },
-  buttonsDiv: {
-    width: '100%',
-    height: '15%',
-    justifyContent: 'center'
+    height: '61%',
+    borderWidth: 3,
+    flexDirection: 'column'
   }
 });
