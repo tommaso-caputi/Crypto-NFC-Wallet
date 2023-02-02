@@ -26,12 +26,10 @@ const styles = StyleSheet.create({
   topDiv: {
     width: '100%',
     height: '40%',
-    borderWidth: 3
   },
   bottomDiv: {
     width: '100%',
     height: '61%',
-    borderWidth: 3,
     flexDirection: 'column'
   }
 });
