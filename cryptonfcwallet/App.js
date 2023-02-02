@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-import BottomDiv from './components/BottomDiv'
-import TopDiv from './components/TopDiv'
+import BottomDiv from './components/BottomDiv/BottomDiv'
+import TopDiv from './components/TopDiv/TopDiv'
 
 export default function App() {
   return (
