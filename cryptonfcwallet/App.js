@@ -25,11 +25,11 @@ const styles = StyleSheet.create({
   },
   topDiv: {
     width: '100%',
-    height: '40%',
+    height: '45%',
   },
   bottomDiv: {
     width: '100%',
-    height: '61%',
+    height: '56%',
     flexDirection: 'column'
   }
 });

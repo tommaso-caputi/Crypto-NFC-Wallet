@@ -4,30 +4,32 @@ import {
     ScrollView,
 } from 'react-native';
 
-import Card from './Card'
+import Card from './Card';
+import React, { Component } from 'react';
 
-export default function BottomDiv() {
-    return (
-        <View style={styles.container}>
-            <View style={styles.data}>
-                <Text style={styles.text}>List</Text>
 
+export default class BottomDiv extends Component {
+    render() {
+        return (
+            <View style={styles.container}>
+                <View style={styles.data}>
+                    <Text style={styles.text}>List</Text>
+
+                </View>
+                <View style={{ flex: 1 }} />
+                <SafeAreaView style={styles.scrollArea}>
+                    <ScrollView showsVerticalScrollIndicator={false}>
+                        <Card name="Bitcoin" shortName="BTC" value="$560" />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                    </ScrollView>
+                </SafeAreaView>
             </View>
-            <View style={{ flex: 1 }} />
-            <SafeAreaView style={styles.scrollArea}>
-                <ScrollView
-                    showsVerticalScrollIndicator={false}
-                >
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                </ScrollView>
-            </SafeAreaView>
-        </View>
-    );
+        );
+    }
 }
 
 const styles = StyleSheet.create({
