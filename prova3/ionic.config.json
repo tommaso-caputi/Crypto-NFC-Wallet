@@ -1,0 +1,7 @@
+{
+  "name": "prova3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
