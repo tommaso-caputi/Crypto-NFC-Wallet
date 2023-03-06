@@ -1,21 +1,22 @@
 import React, { useEffect } from 'react';
 import { IonButton } from '@ionic/react';
-import { useNavigate } from 'react-router-dom';
+import { Navigate, Outlet, useNavigate } from 'react-router-dom';
 
 function Login() {
     const navigate = useNavigate();
 
     useEffect(() => {
-
+        
     }, []);
-    const onSubmit = async (event: any) => {
-        navigate('/Menu');
-    };
+
+    const connect = () => {
+        navigate("/menu");
+    }
 
     return (
-        <div>
-            <IonButton type='submit' >dasdca</IonButton>
-        </div>
+        <>
+            <IonButton onClick={connect}>Connect to Metamask</IonButton>
+        </>
     );
 }
 

@@ -1,10 +1,11 @@
 import React from 'react';
+import { IonButton } from '@ionic/react';
 
-function Menu() {
+function Menu () {
     return (
-        <div>
-            Menu
-        </div>
+        <>
+            <IonButton>daje</IonButton>
+        </>
     );
 }
 

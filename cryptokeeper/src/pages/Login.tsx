@@ -9,6 +9,7 @@ const ethereum = MMSDK.getProvider(); // You can also access via window.ethereum
 
 const Login: React.FC = (props) => {
   const navigate = useNavigate();
+
   const connect = async () => {
     ethereum.request({ method: 'eth_requestAccounts', params: [] })
     .then(navigate('/Menu'));
