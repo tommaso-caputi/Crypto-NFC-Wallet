@@ -1,7 +1,0 @@
-{
-  "name": "cryptokeeper",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
-}
