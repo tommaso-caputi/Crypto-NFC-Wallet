@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.example.app',
-  appName: 'prova',
+  appName: 'daje',
   webDir: 'build',
   bundledWebRuntime: false
 };

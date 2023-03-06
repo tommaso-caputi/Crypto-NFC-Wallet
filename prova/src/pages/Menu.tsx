@@ -1,12 +1,16 @@
-import React from 'react';
-import { IonButton } from '@ionic/react';
+import React, { Component } from 'react';
+import { IonButton, IonLabel } from '@ionic/react';
+import { useLocation } from 'react-router-dom';
 
-function Menu () {
+function Menu() {
+    const location = useLocation();
+
     return (
         <>
-            <IonButton>daje</IonButton>
+            <IonLabel>{location.state.address}</IonLabel>
         </>
     );
+
 }
 
 export default Menu;
