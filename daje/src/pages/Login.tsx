@@ -15,8 +15,9 @@ function Login() {
     }, []); */
 
     const connect = () => {
-        ethereum.request({ method: 'eth_requestAccounts', params: [] })
-            .then((res: any) => navigate("/menu", { state: { address: res[0] } }));
+        /* ethereum.request({ method: 'eth_requestAccounts', params: [] })
+            .then((res: any) => navigate("/menu", { state: { address: res[0] } })); */
+        navigate("/menu", { state: { address: "add" } });
     }
 
     return (
